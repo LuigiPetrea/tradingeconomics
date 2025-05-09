@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Economic Indicator Comparator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Economic Indicator Comparator</h1>
+  <div class="controls">
+    <label for="country1">Select First Country:</label>
+    <select id="country1">
+      <option value="sweden">Sweden</option>
+      <option value="mexico">Mexico</option>
+      <option value="new zealand">New Zealand</option>
+      <option value="thailand">Thailand</option>
+    </select>
+
+    <label for="country2">Select Second Country:</label>
+    <select id="country2">
+      <option value="mexico">Mexico</option>
+      <option value="sweden">Sweden</option>
+      <option value="new zealand">New Zealand</option>
+      <option value="thailand">Thailand</option>
+    </select>
+
+    <button onclick="compareGDP()">Compare</button>
+  </div>
+  <div id="error" class="error"></div>
+  <canvas id="gdpChart" width="600" height="400"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
